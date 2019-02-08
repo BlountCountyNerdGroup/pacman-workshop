@@ -39,24 +39,14 @@ var grid = {
                 
                 if (this.blocks.map[y][x] == this.blocks.key.block) {
                     ctx.beginPath();
-                    ctx.fillStyle = "#003fa5";
+                    ctx.fillStyle = squareColor;
                     ctx.fillRect(absX, absY, this.squareWidth, this.squareHeight);
                 }
             }
         }
     },
     blocks: {
-        map: [
-            [1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1],
-            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-            [0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0],
-            [1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1],
-            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1],
-            [0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0],
-            [1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1],
-            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-            [1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1]
-        ],
+        map: map,
         key: {
             block: 1,
             freeSpace: 0,

@@ -12,10 +12,12 @@ addEventListener("keyup", function(e) {
 var now;
 var then = Date.now();
 
-var pacman = new PacMan(7, 7);
+var pacman = new PacMan(startingX, startingY);
 
 function mainLoop() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    if (logCoords) console.log(pacman.position.grid)
 
     pacman.update(keysDown);
 

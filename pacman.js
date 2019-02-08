@@ -4,7 +4,7 @@ function PacMan(x, y) {
         position: {
             grid: new Coords(x, y) // tracks "desired" position
         },
-        speed: 5, // arbitrary
+        speed: pacmanSpeed, // arbitrary
         size: 30,
         color: "#ffd530",
 
